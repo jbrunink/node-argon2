@@ -13,7 +13,7 @@
       "Release": {
         "target_conditions": [
           ["OS != 'win'", {
-            "cflags+": ["-fdata-sections", "-ffunction-sections", "-fvisibility=hidden"],
+            "cflags+": ["-fdata-sections", "-ffunction-sections", "-fvisibility=hidden", "-mno-avx2"],
             "ldflags+": ["-Wl,--gc-sections"]
           }]
         ],
